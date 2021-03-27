@@ -11,7 +11,7 @@ import tensorflow as tf
 from utils import backbone
 from api import object_counting_api
 
-input_image = "./input_images_and_videos/photo_2020-11-15_12-43-37.jpg"
+input_image = "./input_images_and_videos/test.JPG"
 
 # By default I use an "SSD with Mobilenet" model here. See the detection model zoo (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) for a list of other models that can be run out-of-the-box with varying speeds and accuracies.
 detection_graph, category_index = backbone.set_model('ssd_mobilenet_v1_coco_2018_01_28', 'oid_bbox_trainable_label_map.pbtxt')
